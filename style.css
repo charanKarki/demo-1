@@ -51,11 +51,19 @@ html {
 }
 
 #imgSec .btn {
+    border: 3px solid rgb(7, 194, 138);
+    background: none;
+    transition: all .3s ease-out;
 
+    color: rgb(238, 237, 237) !important;
+}
+
+#imgSec .btn:hover {
     background: rgb(7, 194, 138);
+    transition: all .3s ease-in;
+    color: rgb(46, 45, 45) !important;
 
-    border: none;
-    color: black !important;
+
 }
 
 
@@ -213,7 +221,7 @@ footer .jumbotron ul {
     #imgSec .btn {
         font-size: 1.3rem;
         padding: 3px;
-        color: black !important;
+
     }
 
     #imgContent #contentImg {
@@ -283,8 +291,8 @@ footer .jumbotron ul {
     #imgSec .btn {
         font-size: 1rem;
         padding: 2px;
-        background: rgb(4, 151, 107);
-        color: black !important;
+
+
     }
 
     #imgContent #contentImg {
