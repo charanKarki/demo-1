@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    var jumbo = $(".jumbotron")
+    TweenLite.from(jumbo, 2, {
+        translateX: 100,
+        opacity: 0,
+        ease: Power3.easeOut
+    });
     $(window).scroll(function () {
         if (scrollY >= 600) {
             if (scrollY >= 2300)
@@ -26,13 +32,13 @@ $(document).ready(function () {
 
     });
     $("#about").click(function () {
-
-        window.scrollTo(0, $("#imgContent").offset().top - 100);
+        var scrll = $("#imgContent").offset().top - 100;
+        window.scrollTo(0, scrll);
 
     })
     $("#skills").click(function () {
-
-        window.scrollTo(0, $("#iconSec").offset().top - 100);
+        var scrll = $("#iconSec").offset().top - 100
+        window.scrollTo(0, scrll);
 
     })
 
