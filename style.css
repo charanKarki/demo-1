@@ -39,7 +39,7 @@ html {
 
     background: linear-gradient(180deg, rgba(2, 79, 85, 0.753) 40%, #00000000), no-repeat url("./img/img_112.jpg");
     height: 50vw;
-    background-size: 100%;
+    background-size: 120%;
 }
 
 #imgSec .jumbotron {
@@ -135,6 +135,7 @@ h3 {
 
 #iconSec .card {
     background: none;
+    position: relative;
 
 }
 
