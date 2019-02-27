@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     })
     // tween for icon cards
-    var tween = TweenMax.from("#iconSec .card", 2, {
+    var tween = TweenMax.from("#iconSec .card", 1, {
         opacity: 0,
         left: "-100%"
     })
@@ -47,7 +47,7 @@ $(document).ready(function () {
         }
     })
     var tween2 = TweenMax.to("#imgSec", 1, {
-        backgroundPosition: "0 -80%"
+        backgroundPosition: "0 50%"
     })
     var scen2 = new ScrollMagic.Scene({
         triggerElement: "#imgSec",
