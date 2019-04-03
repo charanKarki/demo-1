@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,400i,500|Srisakdi:400,700");
+// font variables
+$heading: "Srisakdi",
+cursive;
+$small-heading: "Lato",
+sans-serif;
+$para: "Raleway",
+sans-serif;
+//color variables
+$dark: #005878;
+$light: #00a8b0;
+$font-color: #04c7cf;
+$html-bg: #e3feff;
+// font size
+$big-h1: 2.3rem;
+$h1: 2rem;
+$h3: 1.3rem;
+$p: 1.1rem;
+/* global section */
+/* media queries for */
+/* xs<576<sm<768<md<992<lg<1200<xl  */
+// variables
+$xxs:360px;
+$xs:576px;
+$sm:768px;
+$md:992px;
+$lg:1200px;
+// mixin for responsive
+@mixin responsive($width1,$width2){
+    @if $width1 == $width2    {
+    @media only screen and (max-width:$width1) {
+        @content;
+    }
+}
+@else{
+    @media only screen and (min-width:$width1) and (max-width:$width2){
+        @content;
+    }
+}
+}
+
+
+body,
+html {
+    background: rgb(181, 253, 231);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+
+
+/* navbar  */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    font-size: 1.2em;
+padding:0;
+@include responsive($xs,$xs){
+    background: linear-gradient(to right, rgb(0, 128, 107), rgb(3, 150, 142)) !important
+
+}
+.navbar-toggler{
+    font-size: 1rem;
+    padding: .3rem .6rem;
+    margin-right: 2%;
+}
+}
+
+.gradient {
+    background: linear-gradient(to right, rgb(0, 128, 107), rgb(3, 150, 142)) !important
+}
+
+.navbar .navbar-brand {
+    font-size: 1em;
+}
+
+.navbar .navbar-nav {
+    margin-left: 50%;
+    .nav-item{
+        .nav-link{
+            font-size:.8rem
+        }
+    }
+}
+
+
+/* image section */
+.particles-js-canvas-el{
+   position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    z-index: 10;
+}
+#particals {
+position: relative;
+    background: linear-gradient(180deg, rgba(2, 79, 85, 0.753) 40%, #00000000),  url("../img/img_112.jpg");
+    height: 52vw;
+    background-size: 100%;
+    background-attachment: fixed;
+    
+    .jumbotron {
+        background: none;
+        color: white;
+        padding-top: 10% !important;
+        .display-1 {
+            font-weight: 200;
+            font-size:4rem;
+        }
+        h1{
+            font-weight: 200;
+            font-size:2rem
+        }
+    }
+    @include responsive($sm,$sm){
+        .jumbotron {
+            padding-top: 30% !important;
+            
+            h1{
+            font-size:1.4rem;
+        }
+        .display-1{
+            font-size: 1.8rem;
+        }
+    }
+    }
+    @include responsive($xs,$xs){
+
+        height: 50%;
+        // background: linear-gradient(180deg, rgba(2, 79, 85, 0.753) 40%, #00000000);
+        .jumbotron {h1{
+            font-size:1.6rem;
+        }
+        .display-1{
+            font-size: 2rem;
+        }
+    }
+    }
+}
+
+// about me section
+.about-me{
+    position: relative;
+    max-height:100vh;
+
+#myimg {
+    position: absolute;
+    width: 33%;
+    left: 63%;
+    top: 15%;
+
+
+    @include responsive($sm,$sm) {
+        top: 7%;
+    }
+
+    @include responsive($xs,$xs) {
+        top: 8%;
+        left: 51%;
+    }
+}
+
+#about {
+    width: 40%;
+    margin: 0 0 10% 10%;
+    padding: 23% 0;
+
+    @include responsive($sm,$sm) {
+        width: 60%
+    }
+
+    @include responsive($xs,$xs) {
+        width: 100%;
+        padding: 60% 0;
+    }
+
+    h1 {
+        font-size: $big-h1;
+        font-family: $small-heading;
+        display: inline-block;
+        margin-bottom: 20px;
+
+        @include responsive($xs,$xs) {
+            margin: 5px 0;
+        }
+    }
+
+    h1:last-of-type {
+        font-family: $para;
+        font-weight: 400;
+        background: $dark;
+        padding: 0 19px;
+        margin-left: 10px;
+        color: $html-bg;
+        border-radius: 3px;
+    }
+
+    p {
+        font-family: $para;
+        font-size: $p;
+        opacity: .8;
+    }
+
+    
+}
+}
+
+/*skillset  icons  section */
+
+#iconSec {
+    margin:10% 0;
+    background: linear-gradient(to right, rgb(6, 200, 214), rgb(0, 223, 156));
+    .display-4{
+        font-size:2rem;
+    }
+    .card {
+        margin:5%;
+        background: none;
+        position: relative;
+        .card-image-top {
+            font-size: 4rem;
+            /* color: white; */
+        }
+      .progress{
+          height:.2rem
+      }
+    }
+    .col-lg-2:nth-of-type(1) .card-image-top {
+        color: rgba(95, 46, 6, 0.63);
+    }
+    .col-lg-2:nth-of-type(2) .card-image-top {
+
+        color: rgba(5, 52, 90, 0.788);
+    }
+    .col-lg-2:nth-of-type(3) .card-image-top {
+
+        color: rgb(7, 77, 11);
+    }
+    .col-lg-2:nth-of-type(4) .card-image-top {
+        color: rgb(6, 105, 185);
+    }
+    .col-lg-2:nth-of-type(5) .card-image-top {
+        color: rgb(56, 2, 2);
+    }
+}
+
+
+
+
+
+/* card group section */
+
+#cardGroup {
+    margin:10% 0;
+    height:100%;
+    background:rgba(26, 25, 25,.5);
+    .display-4{
+        font-size:2rem;   
+    }
+    .row{
+        
+    .card {
+    background: rgb(63, 63, 63);
+    color: rgb(179, 179, 179);
+    border-radius: 0;
+    border:none;
+    height:20rem;
+    padding:1%;
+    .card-img-top{
+        overflow: hidden;
+        border-radius: 0;
+       
+        img{
+            width:100%;
+        }
+    }
+}
+}
+}
+
+
+
+
+/* form section */
+
+#formId {
+    background: rgba(4, 150, 150, 0.685);
+    border-radius: 5px;
+     margin-top:100px;  
+    .display-4{
+        font-size: 2rem;
+    }
+    .form-control{
+        background: #ebffffd1;
+        border: none;
+        margin:2% auto;
+        width:80%
+
+    }
+
+    input[type='email']{
+        border:none;
+        border-bottom: 2px solid rgb(2, 146, 110);
+        padding: .1rem .7rem;
+        width:80%;
+       
+    }
+
+    .btn {
+        margin: 20px;
+        padding:.2rem 1rem
+    }
+    @include responsive($xs,$sm){
+        .form-control{
+            font-size:.8rem 
+        }
+    }
+}
+
+
+
+/* footer section */
+
+footer {
+    margin-top: 100px;
+    background: rgba(4, 117, 111, 0.575);
+    .display-4{
+        font-size:2rem;
+    }
+    .jumbotron{ 
+        background: none;
+        margin-bottom: 0 !important;
+        ul {
+        list-style: none;
+        font-size: 3rem;
+        width:60%;
+        margin:0 auto;
+        a{
+            color:rgb(34, 34, 34);
+        }
+       
+    }
+}
+@include responsive($xs,$md){
+.jumbotron ul{
+    font-size:2rem;
+  
+}
+}
+@include responsive($sm,$sm){
+    .jumbotron ul{
+        font-size:1rem;
+        padding: 0;
+        width:100%;
+    }  
+}
+}
+
+
+
+
+
+

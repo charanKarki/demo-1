@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,400i,500|Srisakdi:400,700");
+/* global section */
+/* media queries for */
+/* xs<576<sm<768<md<992<lg<1200<xl  */
+body,
+html {
+  background: #b5fde7;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* navbar  */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  font-size: 1.2em;
+  padding: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar {
+    background: -webkit-gradient(linear, left top, right top, from(#00806b), to(#03968e)) !important;
+    background: linear-gradient(to right, #00806b, #03968e) !important;
+  }
+}
+
+.navbar .navbar-toggler {
+  font-size: 1rem;
+  padding: .3rem .6rem;
+  margin-right: 2%;
+}
+
+.gradient {
+  background: -webkit-gradient(linear, left top, right top, from(#00806b), to(#03968e)) !important;
+  background: linear-gradient(to right, #00806b, #03968e) !important;
+}
+
+.navbar .navbar-brand {
+  font-size: 1em;
+}
+
+.navbar .navbar-nav {
+  margin-left: 50%;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: .8rem;
+}
+
+/* image section */
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+#particals {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, rgba(2, 79, 85, 0.753)), to(#00000000)), url("../img/img_112.jpg");
+  background: linear-gradient(180deg, rgba(2, 79, 85, 0.753) 40%, #00000000), url("../img/img_112.jpg");
+  height: 52vw;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#particals .jumbotron {
+  background: none;
+  color: white;
+  padding-top: 10% !important;
+}
+
+#particals .jumbotron .display-1 {
+  font-weight: 200;
+  font-size: 4rem;
+}
+
+#particals .jumbotron h1 {
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #particals .jumbotron {
+    padding-top: 30% !important;
+  }
+  #particals .jumbotron h1 {
+    font-size: 1.4rem;
+  }
+  #particals .jumbotron .display-1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #particals {
+    height: 50%;
+  }
+  #particals .jumbotron h1 {
+    font-size: 1.6rem;
+  }
+  #particals .jumbotron .display-1 {
+    font-size: 2rem;
+  }
+}
+
+.about-me {
+  position: relative;
+  max-height: 100vh;
+}
+
+.about-me #myimg {
+  position: absolute;
+  width: 33%;
+  left: 63%;
+  top: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-me #myimg {
+    top: 7%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about-me #myimg {
+    top: 8%;
+    left: 51%;
+  }
+}
+
+.about-me #about {
+  width: 40%;
+  margin: 0 0 10% 10%;
+  padding: 23% 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-me #about {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about-me #about {
+    width: 100%;
+    padding: 60% 0;
+  }
+}
+
+.about-me #about h1 {
+  font-size: 2.3rem;
+  font-family: "Lato", sans-serif;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+  .about-me #about h1 {
+    margin: 5px 0;
+  }
+}
+
+.about-me #about h1:last-of-type {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  background: #005878;
+  padding: 0 19px;
+  margin-left: 10px;
+  color: #e3feff;
+  border-radius: 3px;
+}
+
+.about-me #about p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  opacity: .8;
+}
+
+/*skillset  icons  section */
+#iconSec {
+  margin: 10% 0;
+  background: -webkit-gradient(linear, left top, right top, from(#06c8d6), to(#00df9c));
+  background: linear-gradient(to right, #06c8d6, #00df9c);
+}
+
+#iconSec .display-4 {
+  font-size: 2rem;
+}
+
+#iconSec .card {
+  margin: 5%;
+  background: none;
+  position: relative;
+}
+
+#iconSec .card .card-image-top {
+  font-size: 4rem;
+  /* color: white; */
+}
+
+#iconSec .card .progress {
+  height: .2rem;
+}
+
+#iconSec .col-lg-2:nth-of-type(1) .card-image-top {
+  color: rgba(95, 46, 6, 0.63);
+}
+
+#iconSec .col-lg-2:nth-of-type(2) .card-image-top {
+  color: rgba(5, 52, 90, 0.788);
+}
+
+#iconSec .col-lg-2:nth-of-type(3) .card-image-top {
+  color: #074d0b;
+}
+
+#iconSec .col-lg-2:nth-of-type(4) .card-image-top {
+  color: #0669b9;
+}
+
+#iconSec .col-lg-2:nth-of-type(5) .card-image-top {
+  color: #380202;
+}
+
+/* card group section */
+#cardGroup {
+  margin: 10% 0;
+  height: 100%;
+  background: rgba(26, 25, 25, 0.5);
+}
+
+#cardGroup .display-4 {
+  font-size: 2rem;
+}
+
+#cardGroup .row .card {
+  background: #3f3f3f;
+  color: #b3b3b3;
+  border-radius: 0;
+  border: none;
+  height: 20rem;
+  padding: 1%;
+}
+
+#cardGroup .row .card .card-img-top {
+  overflow: hidden;
+  border-radius: 0;
+}
+
+#cardGroup .row .card .card-img-top img {
+  width: 100%;
+}
+
+/* form section */
+#formId {
+  background: rgba(4, 150, 150, 0.685);
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+#formId .display-4 {
+  font-size: 2rem;
+}
+
+#formId .form-control {
+  background: #ebffffd1;
+  border: none;
+  margin: 2% auto;
+  width: 80%;
+}
+
+#formId input[type='email'] {
+  border: none;
+  border-bottom: 2px solid #02926e;
+  padding: .1rem .7rem;
+  width: 80%;
+}
+
+#formId .btn {
+  margin: 20px;
+  padding: .2rem 1rem;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  #formId .form-control {
+    font-size: .8rem;
+  }
+}
+
+/* footer section */
+footer {
+  margin-top: 100px;
+  background: rgba(4, 117, 111, 0.575);
+}
+
+footer .display-4 {
+  font-size: 2rem;
+}
+
+footer .jumbotron {
+  background: none;
+  margin-bottom: 0 !important;
+}
+
+footer .jumbotron ul {
+  list-style: none;
+  font-size: 3rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer .jumbotron ul a {
+  color: #222222;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  footer .jumbotron ul {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer .jumbotron ul {
+    font-size: 1rem;
+    padding: 0;
+    width: 100%;
+  }
+}
