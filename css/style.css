@@ -140,6 +140,7 @@ html {
 @media only screen and (max-width: 768px) {
   .about-me #about {
     width: 60%;
+    margin: 0 0 10% 0%;
   }
 }
 

@@ -168,7 +168,9 @@ position: relative;
     padding: 23% 0;
 
     @include responsive($sm,$sm) {
-        width: 60%
+        width: 60%;
+    margin: 0 0 10% 0%;
+
     }
 
     @include responsive($xs,$xs) {
